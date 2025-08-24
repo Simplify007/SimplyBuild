@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Home</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?home,nature') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 35%;
+    width: 30%;
+    height: 20px;
+    border-radius: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 80vh;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #28a745;
+    max-width: fit-content;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
+.img1 {
+    display: none;
+}
+
+/* ✅ Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        text-align: center;
+        background-color: #111; /* fallback if background image is hidden */
+        color: #f0f0f0;
+    }
+
+    header {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    /* nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 1em;
+    } */
+
+    /* .hero {
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+        padding: 40px 10px;
+    } */
+
+    /* .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    } */
+/* 
+    footer {
+        font-size: 0.9em;
+        padding: 10px;
+        position: relative;
+        margin-top: 20px;
+    } */
+
+    .img {
+        display: none;
+    }
+
+    .img1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+
+    </style>
+</head>
+<body style="margin:0; padding:0; background: url('f8139ef1-7949-48b7-990c-45b6634fbebb.png') no-repeat center center fixed; background-size: cover;">
+    
+    <img src="image1.webp" alt="Wallpaper" class="img1">
+    <img src="image.jpg" alt="Research" class="img">
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+
+    
+
+    <div class="hero">
+        <h1>Welcome Home</h1>
+        <p>Feel the warmth, find your peace.</p>
+        <a href="#" class="btn"  onclick="gotoresumepage()">Get Started</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Welcome Home. All rights reserved.
+    </footer>
+
+
+    <script>
+        function gotoresumepage() {
+      window.location.href = "resume.html"; // Change to the correct path if needed
+    }
+    </script>
+
+</body>
+</html>
